@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #233d4d;
+    --secondary-color: #A2A80E;
+    --accent1-color: #e9c46a;
+    --accent2-color: #f4a261;
+    --accent3-color: #eb7500;
+
+    --heading-font: "lato", sans-serif;
+    --paragraph-font: "lato", sans-serif;
+
+    --nav-background-color: #233d4d;
+    --nav-link-color: #3A3634;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #363538;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-evenly;
+    box-shadow: 0px 20px 10px -20px rgba(10, 10, 10, 0.9);
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 10px 5.39rem;
+
+
+}
+
+nav a:link,
+nav a :visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: rgba(244, 162, 97, 0.6);
+    box-shadow: 0 0 20px rgba(10, 10, 10, 0.9);
+}
+
+.scenarios {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: rgba(162, 168, 14, 0.6);
+    box-shadow: 0 0 30px rgba(10, 10, 10, 0.9);
+    border-radius: 9px;
+    line-height: 1.5;
+}
+
+.scenarios>h2 {
+    margin-top: -25px;
+    text-align: center;
+    font-weight: 700;
+    padding: 25px;
+    color: #ffffff;
+    background-color: #233d4d;
+    border-radius: 5px 5px 0 0;
+}
+
+.scenarios h3,
+li {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 2rem;
+}
+
+.scenarios>p {
+    margin: -15px 3px;
+}
