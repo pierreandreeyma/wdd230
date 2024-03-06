@@ -116,3 +116,21 @@ li {
 .scenarios>p {
     margin: -15px 3px;
 }
+.backtop {
+    font-size: x-small;
+    padding-right: 0 !important;
+    margin: 1em 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 1.5em;
+    text-align: right;
+    border-top: 1px solid #eef;
+    clear: both;
+  }
+  .backtop > a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+  }
