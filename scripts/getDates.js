@@ -18,3 +18,12 @@ let pageVisits = localStorage.getItem("pageVisits") || 0;
 pageVisits++;
 localStorage.setItem("pageVisits", pageVisits);
 document.getElementById("visits-placeholder").textContent = pageVisits;
+
+// Responsive Hamburger Menu button for small screen device
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
